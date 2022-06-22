@@ -1,1 +1,3 @@
-<p>video-dashboard works!</p>
+<app-video-list [videodata]="data" (selected)="updatetitle($event)"></app-video-list>
+<app-video-player [title]="titleselected"></app-video-player>
+<app-stat-filters></app-stat-filters>

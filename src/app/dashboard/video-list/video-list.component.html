@@ -1,0 +1,4 @@
+<app-video-card *ngFor="let videos of videodata;index as i" [i]="i+1" [title]="videos.title" [author]="videos.author"
+(click)="highlight(i, videos.title)" [clicked]="clicked+1"></app-video-card>
+
+
