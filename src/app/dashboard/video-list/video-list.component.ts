@@ -7,8 +7,9 @@ import { Video } from '../app-types';
   styleUrls: ['./video-list.component.scss']
 })
 export class VideoListComponent implements OnInit {
-  @Input() videodata: any[] = [];
+  @Input() videodata: any = [];
   @Output() selected = new EventEmitter<string>();
+  @Output() highlighted = new EventEmitter<number>();
   clicked!: number;
 
   constructor() { }
